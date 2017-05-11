@@ -8,7 +8,7 @@ class App extends Component {
       <div>
         <AppHeader>
           <LogoImg src={logo} alt="logo" />
-          <HeaderText>React Starter</HeaderText>
+          <HeaderText>React Starter Kit</HeaderText>
         </AppHeader>
         {this.props.children}
       </div>
