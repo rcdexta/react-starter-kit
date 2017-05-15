@@ -1,10 +1,10 @@
-import { take, call, put } from 'redux-saga/effects'
+import { take, call, put, takeLatest } from 'redux-saga/effects'
 import { LOGIN_REQUEST, SET_AUTH, AUTH_FAILED } from '../actions/constants'
 import Auth from '../client/auth'
 
 export function* loginFlow() {
   while (true) {
-    let request = yield take(LOGIN_REQUEST)
+    let request = yield takeLatest(LOGIN_REQUEST)
     let { email, password } = request
 
     try {
