@@ -22,23 +22,27 @@ yarn start
 
 #### Core
 
-* React (v.15.4)
-* React-Router (v.4)
-* Styled-Components
+* react (15.4)
+* react-Router (4.0)
+* styled-Components
+* redux
+* redux-Saga
+* axios
+
+#### UI Theme
+
+* material-ui
 
 #### Testing
 
-* Jest
+* jest
 
-#### Others
+#### Productivity
 
-* Webpack
-
-* Eslint
-
-* Babel
-
-  ​
+* webpack
+* eslint
+* babel
+* redux-logger
 
 ## Table of Contents
 
