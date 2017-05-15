@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CenteredDiv } from '../styles/CommonStyles'
+import { CenteredDiv } from '../styles/Common'
 
 export default class Home extends Component {
   render() {

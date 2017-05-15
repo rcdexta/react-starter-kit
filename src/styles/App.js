@@ -28,8 +28,6 @@ injectGlobal`
 
 export const AppHeader = styled.div`
   background-color: #1E5992;
-  height: 35px;
-  padding: 10px;
   color: white;
   display: flex;
   align-items: center;
