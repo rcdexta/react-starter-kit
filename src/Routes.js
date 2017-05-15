@@ -13,7 +13,7 @@ export default class Routes extends Component {
   render() {
     return <Router>
       <AppLayout>
-        <Route path="/login" exact component={Login}/>
+        <Route path="/login" component={Login}/>
         <Route path="/" exact component={Home}/>
       </AppLayout>
     </Router>

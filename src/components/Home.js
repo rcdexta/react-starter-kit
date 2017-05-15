@@ -4,8 +4,8 @@ import { CenteredDiv } from '../styles/Common'
 export default class Home extends Component {
   render() {
     return (
-      <CenteredDiv>
-        To get started, edit <code>src/components/Home.js</code> and save to reload.
+      <CenteredDiv style={{padding: 50}}>
+        To get started, edit src/components/Home.js and save to reload.
       </CenteredDiv>
     )
   }
