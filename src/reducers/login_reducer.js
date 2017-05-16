@@ -1,11 +1,32 @@
-import { SET_AUTH, AUTH_FAILED } from '../actions/constants'
+import { LOGIN_REQUESTING, LOGIN_SUCCESS, LOGIN_ERROR } from '../actions/constants'
 
-function loginReducer(state = {}, action) {
+const initialState = {
+  requesting: false,
+  successful: false,
+  error: null
+}
+
+function loginReducer(state = initialState, action) {
   switch (action.type) {
-    case SET_AUTH:
-      return { ...state, ...action.payload }
-    case AUTH_FAILED:
-      return { ...state, ...action.payload }
+    case LOGIN_REQUESTING:
+      return {
+        ...state,
+        requesting: true,
+        successful: false
+      }
+    case LOGIN_SUCCESS:
+      return {
+        ...state,
+        requesting: false,
+        successful: true
+      }
+    case LOGIN_ERROR:
+      return {
+        ...state,
+        requesting: false,
+        successful: false,
+        error: 'Incorrect Credentials... Pls try again!'
+      }
     default:
       return state
   }

@@ -1,9 +1,16 @@
-import axios from 'axios'
-
 const Auth = {
 
   login: (email, password) => {
-    return axios.post('/provider/login.json', {email: email, password: password})
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        if (email === 'a@b.com' && password === 'abcd') {
+          resolve({authToken: '12345'})
+        } else {
+          resolve({status: 'Error'})
+        }
+      }, 1000);
+    });
+
   }
 
 }

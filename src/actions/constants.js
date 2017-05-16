@@ -1,3 +1,3 @@
-export const LOGIN_REQUEST = 'LOGIN_REQUEST'
-export const SET_AUTH = 'SET_AUTH'
-export const AUTH_FAILED = 'AUTH_FAILED'
+export const LOGIN_REQUESTING = 'LOGIN_REQUEST'
+export const LOGIN_SUCCESS = 'SET_AUTH'
+export const LOGIN_ERROR = 'AUTH_FAILED'

@@ -7,3 +7,8 @@ export const LoginPanel = styled(Paper)`
   display: flex;
   flex-direction: column;
 `
+
+export const SubmitProgressDiv = styled.div`
+  margin-top: 10px;
+  text-align: center;
+`

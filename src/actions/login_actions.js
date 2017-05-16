@@ -1,9 +1,9 @@
-import { LOGIN_REQUEST } from './constants'
+import { LOGIN_REQUESTING } from './constants'
 
-export const loginRequest = function loginRequest ({ email, password }) {
+export const loginRequest = function loginRequest({ email, password }) {
   return {
-    type: LOGIN_REQUEST,
+    type: LOGIN_REQUESTING,
     email,
-    password,
+    password
   }
 }
