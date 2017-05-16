@@ -1,26 +1,36 @@
 import React, { Component } from 'react'
 import { CenteredDiv } from '../styles/common'
 import UserSession from '../helpers/user_session'
-import {withRouter} from 'react-router-dom'
+import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux'
+
+import { logoutRequest } from '../actions/session_actions'
 
 class Home extends Component {
+
+  logout = () => {
+    this.props.logoutRequest(UserSession.getUserId())
+  }
+
   render() {
-    return (
-      <CenteredDiv style={{ padding: 50 }}>
-        <p>To get started, edit src/components/Home.js and save to reload.</p>
-        <p>
-          <button
-            onClick={() => {
-              UserSession.destroySession()
-              this.props.history.push('/login')
-            }}
-          >
-            Sign out
-          </button>
-        </p>
-      </CenteredDiv>
-    )
+    const { login: { signed_in } } = this.props
+    if (!signed_in) {
+      return <Redirect to='/login' />
+    } else {
+      return (
+        <CenteredDiv style={{ padding: 50 }}>
+          <p>To get started, edit src/components/Home.js and save to reload.</p>
+          <p>
+            <button onClick={this.logout}>
+              Sign out
+            </button>
+          </p>
+        </CenteredDiv>
+      )
+    }
   }
 }
 
-export default withRouter(Home)
+const mapStateToProps = state => ({ login: state.loginReducer })
+
+export default connect(mapStateToProps, { logoutRequest })(Home)

@@ -6,6 +6,7 @@ module.exports = {
 
   setSession(data) {
     localStorage.authToken = data.authToken
+    localStorage.userId = data.userId
   },
 
   destroySession() {
@@ -15,5 +16,9 @@ module.exports = {
   getToken(){
     return localStorage.authToken
   },
+
+  getUserId() {
+    return localStorage.userId
+  }
 
 }

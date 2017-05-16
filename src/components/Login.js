@@ -7,7 +7,7 @@ import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 import CircularProgress from 'material-ui/CircularProgress'
 
-import { loginRequest } from '../actions/login_actions'
+import { loginRequest } from '../actions/session_actions'
 
 class Login extends Component {
   state = { email: '', password: '' }
@@ -20,9 +20,9 @@ class Login extends Component {
 
   render() {
     const { email, password } = this.state
-    const { login: { requesting, successful, error } } = this.props
+    const { login: { requesting, signed_in, error } } = this.props
 
-    if (successful) {
+    if (signed_in) {
       const { from } = this.props.location.state || { from: { pathname: '/' } }
       return <Redirect to={from} />
     } else {
