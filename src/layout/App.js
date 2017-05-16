@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import logo from '../images/prologo.png'
-import { LogoImg } from '../styles/App'
+import { LogoImg } from '../styles/app'
 import AppBar from 'material-ui/AppBar'
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div>
@@ -13,5 +13,3 @@ class App extends Component {
     )
   }
 }
-
-export default App

@@ -1,5 +1,6 @@
 const Auth = {
 
+  // locally simulated asynchronous request
   login: (email, password) => {
     return new Promise((resolve) => {
       setTimeout(() => {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { CenteredDiv } from '../styles/Common'
-import { LoginPanel, SubmitProgressDiv } from '../styles/Login'
+import { CenteredDiv } from '../styles/common'
+import { LoginPanel, SubmitProgressDiv } from '../styles/login'
 import { Redirect } from 'react-router-dom'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
@@ -23,7 +23,8 @@ class Login extends Component {
     const { login: { requesting, successful, error } } = this.props
 
     if (successful) {
-      return <Redirect to="/" />
+      const { from } = this.props.location.state || { from: { pathname: '/' } }
+      return <Redirect to={from} />
     } else {
       return (
         <CenteredDiv>
@@ -32,7 +33,7 @@ class Login extends Component {
             <TextField value={password} floatingLabelText="Password" type="password" onChange={this.updateField.bind(this, 'password')} />
             {requesting
               ? <SubmitProgressDiv><CircularProgress size={30} /></SubmitProgressDiv>
-              : <RaisedButton label={requesting ? 'SUBMITTING' : 'SUBMIT'} backgroundColor="#a4c639" primary onClick={this.submit} style={{marginTop: 10}}/> }
+              : <RaisedButton label="SUBMIT" backgroundColor="#a4c639" primary onClick={this.submit} style={{ marginTop: 10 }} />}
           </LoginPanel>
         </CenteredDiv>
       )

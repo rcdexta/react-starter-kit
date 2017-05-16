@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Routes from './Routes'
+import Routes from './routes'
 import config from './config'
 import axios from 'axios'
 

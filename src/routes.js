@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import AppLayout from './layout/App';
 import Home from './components/Home'
 import Login from './components/Login'
+import PrivateRoute from './helpers/private_route'
 
 import {
   BrowserRouter as Router,
@@ -14,7 +15,7 @@ export default class Routes extends Component {
     return <Router>
       <AppLayout>
         <Route path="/login" component={Login}/>
-        <Route path="/" exact component={Home}/>
+        <PrivateRoute path="/" exact component={Home}/>
       </AppLayout>
     </Router>
   }
