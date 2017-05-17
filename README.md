@@ -26,7 +26,7 @@ yarn start
 * react-Router (4.0)
 * styled-Components
 * redux
-* redux-Saga
+* redux-saga
 * axios
 
 #### UI Theme
@@ -36,6 +36,7 @@ yarn start
 #### Testing
 
 * jest
+* enzyme
 
 #### Productivity
 
