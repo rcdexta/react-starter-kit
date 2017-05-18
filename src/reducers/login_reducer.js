@@ -12,7 +12,8 @@ function loginReducer(state = initialState, action) {
       return {
         ...state,
         requesting: true,
-        signed_in: false
+        signed_in: false,
+        error: null
       }
     case LOGIN_SUCCESS:
       return {

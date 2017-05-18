@@ -23,6 +23,7 @@ injectGlobal`
     font-family: Gibson-Regular, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 14px;
   }
 `
 
@@ -32,13 +33,16 @@ export const AppHeader = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 50px;
 `
 
 export const LogoImg = styled.img`
   width: 48px;
-  margin: 0px 15px;
+  margin: 0px 15px 3px 0px;
 `
 
 export const HeaderText = styled.div`
   font-size: 24px;
 `
+
+

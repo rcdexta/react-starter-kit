@@ -4,10 +4,6 @@ import Routes from './routes'
 import config from './config'
 import axios from 'axios'
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import injectTapEventPlugin from 'react-tap-event-plugin'
-injectTapEventPlugin();
-
 import { createStore, applyMiddleware } from 'redux'
 import createSagaMiddleware from 'redux-saga'
 import { Provider } from 'react-redux'
@@ -20,13 +16,11 @@ let store = createStore(reducer, applyMiddleware(sagaMiddleware))
 sagaMiddleware.run(rootSaga)
 
 axios.defaults.baseURL = config.path.backend
-axios.interceptors.response.use((res) => res.data)
+axios.interceptors.response.use(res => res.data)
 
 ReactDOM.render(
   <Provider store={store}>
-    <MuiThemeProvider>
-      <Routes />
-    </MuiThemeProvider>
+    <Routes />
   </Provider>,
   document.getElementById('root')
 )

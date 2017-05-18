@@ -19,9 +19,9 @@ class Home extends Component {
     } else {
       return (
         <CenteredDiv style={{ padding: 50 }}>
-          <p>To get started, edit src/components/Home.js and save to reload.</p>
+          <pre>To get started, edit src/components/Home.js and save to reload.</pre>
           <p>
-            <button onClick={this.logout}>
+            <button className="inverse" onClick={this.logout}>
               Sign out
             </button>
           </p>

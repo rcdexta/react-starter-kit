@@ -1,0 +1,44 @@
+exports[`<Login/> snapshot test 1`] = `
+<div
+  className="row">
+  <div
+    className="col-sm" />
+  <div
+    className="col-sm-12 col-md-8 col-lg-8 jxwKTr">
+    <form>
+      <div
+        className="input-group fluid">
+        <input
+          className="evyRiw"
+          id="emailField"
+          onChange={[Function]}
+          placeholder="Email"
+          type="text"
+          value="" />
+      </div>
+      <div
+        className="input-group fluid">
+        <input
+          className="evyRiw"
+          id="passwordField"
+          onChange={[Function]}
+          placeholder="Password"
+          type="password"
+          value="" />
+      </div>
+      <div
+        className="input-group fluid dRWiaS" />
+      <div
+        className="input-group fluid">
+        <input
+          className="primary cklcwZ"
+          onClick={[Function]}
+          type="submit"
+          value="Submit" />
+      </div>
+    </form>
+  </div>
+  <div
+    className="col-sm" />
+</div>
+`;

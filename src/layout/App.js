@@ -1,14 +1,19 @@
 import React, { Component } from 'react'
 import logo from '../images/prologo.png'
-import { LogoImg } from '../styles/app'
-import AppBar from 'material-ui/AppBar'
+import '../styles/base/mini.css'
+import { LogoImg, AppHeader, HeaderText } from '../styles/app'
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <AppBar title="React Starter Kit" iconElementLeft={<LogoImg src={logo} />} iconStyleLeft={{ marginTop: 18 }} style={{ backgroundColor: '#1E5992' }} />
-        {this.props.children}
+        <AppHeader>
+          <LogoImg src={logo} alt="logo" />
+          <HeaderText>React Starter</HeaderText>
+        </AppHeader>
+        <div className="container">
+          {this.props.children}
+        </div>
       </div>
     )
   }
