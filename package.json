@@ -58,11 +58,15 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "ci": "node scripts/test.js --env=jsdom --coverage"
   },
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
+    ],
+    "coverageReporters": [
+      "html"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
