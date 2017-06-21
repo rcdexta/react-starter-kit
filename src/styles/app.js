@@ -36,11 +36,6 @@ export const AppHeader = styled.div`
   height: 50px;
 `
 
-export const LogoImg = styled.img`
-  width: 48px;
-  margin: 0px 15px 3px 0px;
-`
-
 export const HeaderText = styled.div`
   font-size: 24px;
 `

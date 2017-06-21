@@ -32,6 +32,7 @@ exports[`<Login/> snapshot test 1`] = `
         className="input-group fluid">
         <input
           className="primary cklcwZ"
+          id="submitButton"
           onClick={[Function]}
           type="submit"
           value="Submit" />

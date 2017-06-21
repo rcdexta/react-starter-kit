@@ -39,7 +39,7 @@ export class Login extends Component {
               <div className="input-group fluid">
                 {requesting
                   ? <SubmitProgressDiv><div className="spinner-donut" /></SubmitProgressDiv>
-                  : <SubmitButton className="primary" type="submit" value="Submit" onClick={this.submit} />}
+                  : <SubmitButton className="primary" type="submit" id="submitButton" value="Submit" onClick={this.submit} />}
               </div>
             </form>
           </LoginPanel>
