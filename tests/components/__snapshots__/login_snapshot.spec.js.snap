@@ -1,90 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Login/> snapshot progress bar behavior 1`] = `
 <div
-  className="row">
+  className="row"
+>
   <div
-    className="col-sm" />
+    className="col-sm"
+  />
   <div
-    className="col-sm-12 col-md-8 col-lg-8 jxwKTr">
+    className="col-sm-12 col-md-8 col-lg-8 sc-bdVaJa bjmueK"
+  >
     <form>
       <div
-        className="input-group fluid">
+        className="input-group fluid"
+      >
         <input
-          className="evyRiw"
+          className="sc-bxivhb gkfUBt"
           id="emailField"
           onChange={[Function]}
           placeholder="Email"
           type="email"
-          value="" />
+          value=""
+        />
       </div>
       <div
-        className="input-group fluid">
+        className="input-group fluid"
+      >
         <input
-          className="evyRiw"
+          className="sc-bxivhb gkfUBt"
           id="passwordField"
           onChange={[Function]}
           placeholder="Password"
           type="password"
-          value="" />
+          value=""
+        />
       </div>
       <div
-        className="input-group fluid dRWiaS" />
+        className="input-group fluid sc-ifAKCX kNZLxY"
+      />
       <div
-        className="input-group fluid">
+        className="input-group fluid"
+      >
         <div
-          className="mLiZo">
+          className="sc-bwzfXH eJvkvQ"
+        >
           <div
-            className="spinner-donut" />
+            className="spinner-donut"
+          />
         </div>
       </div>
     </form>
   </div>
   <div
-    className="col-sm" />
+    className="col-sm"
+  />
 </div>
 `;
 
 exports[`<Login/> snapshot test 1`] = `
 <div
-  className="row">
+  className="row"
+>
   <div
-    className="col-sm" />
+    className="col-sm"
+  />
   <div
-    className="col-sm-12 col-md-8 col-lg-8 jxwKTr">
+    className="col-sm-12 col-md-8 col-lg-8 sc-bdVaJa bjmueK"
+  >
     <form>
       <div
-        className="input-group fluid">
+        className="input-group fluid"
+      >
         <input
-          className="evyRiw"
+          className="sc-bxivhb gkfUBt"
           id="emailField"
           onChange={[Function]}
           placeholder="Email"
           type="email"
-          value="" />
+          value=""
+        />
       </div>
       <div
-        className="input-group fluid">
+        className="input-group fluid"
+      >
         <input
-          className="evyRiw"
+          className="sc-bxivhb gkfUBt"
           id="passwordField"
           onChange={[Function]}
           placeholder="Password"
           type="password"
-          value="" />
+          value=""
+        />
       </div>
       <div
-        className="input-group fluid dRWiaS" />
+        className="input-group fluid sc-ifAKCX kNZLxY"
+      />
       <div
-        className="input-group fluid">
+        className="input-group fluid"
+      >
         <input
-          className="primary cklcwZ"
+          className="primary sc-htpNat iJpthS"
           id="submitButton"
           onClick={[Function]}
           type="submit"
-          value="Submit" />
+          value="Submit"
+        />
       </div>
     </form>
   </div>
   <div
-    className="col-sm" />
+    className="col-sm"
+  />
 </div>
 `;

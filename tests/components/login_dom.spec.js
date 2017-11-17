@@ -1,11 +1,11 @@
 import React from 'react'
 import { Login } from '../../src/components/Login'
-import { mount } from 'enzyme'
+import { mount, shallow } from 'enzyme'
 import sinon from 'sinon'
 
 const render = () => {
   const spy = sinon.spy()
-  const component = mount(<Login login={{ requesting: false, signed_in: false, error: null }} loginRequest={spy}/>)
+  const component = shallow(<Login login={{ requesting: false, signed_in: false, error: null }} loginRequest={spy}/>)
   const emailField = component.find('#emailField')
   const passwordField = component.find('#passwordField')
   const submitButton = component.find('#submitButton')
