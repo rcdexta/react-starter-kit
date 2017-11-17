@@ -28,7 +28,7 @@ export class Login extends Component {
           <LoginPanel className="col-sm-12 col-md-8 col-lg-8">
             <form>
               <div className="input-group fluid">
-                <TextField type="text" placeholder="Email" id="emailField" onChange={this.updateField.bind(this, 'email')} value={email} />
+                <TextField type="email" placeholder="Email" id="emailField" onChange={this.updateField.bind(this, 'email')} value={email} />
               </div>
               <div className="input-group fluid">
                 <TextField type="password" placeholder="Password" id="passwordField" onChange={this.updateField.bind(this, 'password')} value={password} />
